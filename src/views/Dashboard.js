@@ -1,5 +1,5 @@
 import React from 'react';
-import { API_BASE_URL, API_KEY } from "../utils/config";
+import { API_BASE_URL, API_KEY, ICON_IMAGE_URL } from "../utils/config";
 
 class Dashboard extends React.Component {
 
@@ -58,7 +58,9 @@ class Dashboard extends React.Component {
           {weatherData && <ul className = "weather-details-list">
             <li className = "temp" >{weatherData.temp} º</li>
             <li className = "temp-title">{weatherData.main}</li>
-            <li className = "teamp-img"></li>
+            <li className = "temp-img">
+              <img src = {`${ICON_IMAGE_URL}/${weatherData.icon}.png`} alt = "Weather Icon" />
+            </li>
             <li className = "temp-description">({weatherData.description})</li>
             <li className = "city">{weatherData.cityName}</li>
           </ul>}
