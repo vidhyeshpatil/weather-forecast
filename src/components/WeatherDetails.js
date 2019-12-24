@@ -1,6 +1,8 @@
 import React from 'react';
 import { ICON_IMAGE_URL } from '../utils/config';
 
+// functional component
+// destructure of props & return valid react element
 const WeatherDetails = ({ weatherData }) => {
     return (
         <div className = "weather-details-wrapper">

@@ -1,5 +1,7 @@
 import React from 'react';
 
+// functional component
+// destructure of props & return valid react element
 const InputWrapper = ({ handleSubmit }) => {
     return (
         <div className = "header-wrapper">
